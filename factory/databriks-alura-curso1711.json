@@ -1,0 +1,9 @@
+{
+	"name": "databriks-alura-curso1711",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1a1db405-89a7-49bd-97cc-24664791e90f",
+		"tenantId": "860d4520-d479-41e4-ab29-fc4694b3aacc"
+	}
+}
