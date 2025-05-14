@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "ingestao-camada-bronze",
-				"type": "DatabricksSparkPython",
+				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -13,11 +13,18 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": ""
+				},
+				"linkedServiceName": {
+					"referenceName": "databricks_datafactory_link",
+					"type": "LinkedServiceReference"
+				}
 			},
 			{
 				"name": "ingestao-camada-silver",
-				"type": "DatabricksSparkPython",
+				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
 						"activity": "ingestao-camada-bronze",
